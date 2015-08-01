@@ -66,7 +66,6 @@ shift $(( OPTIND - 1 ))
 [[ -d $dir/downloads ]] || mkdir -p $dir/downloads
 [[ -d $dir/incomplete ]] || mkdir -p $dir/incomplete
 [[ -d $dir/info/blocklists ]] || mkdir -p $dir/info/blocklists
-chown -Rh debian-transmission. $dir
 
 if [[ $# -ge 1 && -x $(which $1 2>&-) ]]; then
     exec "$@"

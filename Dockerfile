@@ -9,7 +9,7 @@ RUN export DEBIAN_FRONTEND='noninteractive' && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/*
 COPY transmission.sh /usr/bin/
-
+USER root
 VOLUME ["/var/lib/transmission-daemon"]
 
 EXPOSE 9091 51413/tcp 51413/udp
