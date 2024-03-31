@@ -2,6 +2,6 @@ kind: template
 load: docker-build-multiarch.yaml
 data:
   dockerfiledir: .
-  imagename: transmission
-  imagetag: seedbox
+  imagename: seedbox/transmission
+  imagetag: latest
   
